@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frank Ketz | Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="Coding.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div>
+        <h1>Frank Ketz</h1>
+        <p class="subtitle">Computer Programming Student • Aspiring Tech Professional</p>
+        <div class="btn-row">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-outline" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Quick Info</h2>
+        <ul class="clean-list">
+          <li><strong>School:</strong> JJC (Computer Programming)</li>
+          <li><strong>Skills:</strong> Python, Java, C, HTML</li>
+          <li><strong>Goal:</strong> Build real-world software & web projects</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I’m currently enrolled in college studying computer programming and working toward a technology career.
+        I enjoy learning new tools, building projects, and improving my problem-solving skills.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Education</h3>
+          <p>Joliet West High School (Graduated 2022)</p>
+          <p>JJC — Computer Programming (2023–Present)</p>
+          <p>Continuing education at Lewis University to complete my degree</p>
+        </div>
+
+        <div class="card">
+          <h3>Experience</h3>
+          <p><strong>Cemeno’s Pizza</strong> (2021–Present) — food prep & customer support</p>
+          <p><strong>Inwood Park District</strong> (2023–Present) — maintenance & facility tasks</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="muted">This has what i've worked on in School.</p>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Vehicle Manager (C++)</h3>
+          <p>Menu-based program to add/search/delete vehicles using OOP.</p>
+          <div class="tag-row">
+            <span class="tag">C++</span><span class="tag">OOP</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Stock Portfolio (Java)</h3>
+          <p>Inheritance-based portfolio with Company subclasses and file input.</p>
+          <div class="tag-row">
+            <span class="tag">Java</span><span class="tag">Inheritance</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>This Website</h3>
+          <p>Personal portfolio site built with HTML/CSS/JS in VS Code.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Want to reach out? Send me a message:</p>
+
+      <form action="https://formsubmit.co/ketzfranie@gmail.com" method="POST">
+     <input type="text" name="name" required>
+     <input type="email" name="email" required>
+     <button type="submit">Send</button>
+</form>
+
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Frank Ketz • Built in VS Code</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
