@@ -1,13 +1,22 @@
-// Set footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Get form + status elements
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.style.transform = "translateY(-4px)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "translateY(0)";
+  });
+});
+
 const form = document.getElementById("contactForm");
 const statusEl = document.getElementById("formStatus");
 
-// Handle form submit
 if (form && statusEl) {
   form.addEventListener("submit", () => {
-    statusEl.textContent = "Opening your email submission form...";
+    statusEl.textContent = "Sending your message...";
   });
 }
